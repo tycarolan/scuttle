@@ -28,7 +28,7 @@ tick always produces the same board.
 
 | Phase | Status | Notes |
 |-------|--------|-------|
-| Phase 0: Staging the repo | Resolved | Staged at `scuttle/` in the hub, then extracted with history into `TaioTech/scuttle` |
+| Phase 0: Staging the repo | Resolved | Staged at `scuttle/` in the hub, then extracted with history into `tycarolan/scuttle` |
 | Phase 1a: Determinism core | Complete | Seed, RNG, lane generation |
 | Phase 1b: Simulation | Complete | Fixed-timestep step function, movement rules, swept collision |
 | Phase 1c: Presentation | Complete | Canvas renderer, three-button controls, RAF loop |
@@ -44,8 +44,8 @@ been played in a browser at phone size, not only compiled.
 
 ## Phase 0: where the code lives
 
-The spec assumes Scuttle ships from `TaioTech/scuttle`, generated from
-`TaioTech/app-template`. Neither repository exists. `app-template` was never
+The spec assumes Scuttle ships from `tycarolan/scuttle`, generated from
+`tycarolan/app-template`. Neither repository exists. `app-template` was never
 created, and the GitHub credentials in this session cannot create repositories
 — the API refuses with a permissions error, so this is not something a retry
 fixes.
@@ -197,7 +197,7 @@ the render rate has no influence on the run.
 
 | Decision | Rationale |
 |----------|-----------|
-| Staged at `scuttle/` in the hub rather than its own repo | `TaioTech/scuttle` could not be created with the credentials available to the building session; staging kept the work reviewable and it moved out intact once a session with repository-creation rights ran the extraction |
+| Staged at `scuttle/` in the hub rather than its own repo | `tycarolan/scuttle` could not be created with the credentials available to the building session; staging kept the work reviewable and it moved out intact once a session with repository-creation rights ran the extraction |
 | "One lane of dry-sand hazards" read as one *band*, not one row | A single row is a two-step game, which cannot show whether the asymmetry is fun. The dry sand band is present with many lanes; the tide line and surf bands are absent |
 | Lanes continue indefinitely rather than ending at a sea | Phase 1 has no surf to reach. An open-ended beach gives as many crossings as the player survives, which is what makes the movement judgeable |
 | Every fourth lane is safe | Gives a rhythm of three crossings and a breath, and creates the situation the asymmetry exists for: standing safe, sliding sideways, choosing an entry |
