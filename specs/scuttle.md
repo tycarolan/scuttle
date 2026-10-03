@@ -1,7 +1,7 @@
 # Scuttle
 
 > **Status**: Draft
-> **Dependencies**: `TaioTech/app-template` (this is one of its first consumers)
+> **Dependencies**: `tycarolan/app-template` (this is one of its first consumers)
 > **Date**: 2026-07-29
 
 ## Summary
@@ -155,12 +155,12 @@ It ships as its own repo and deployment. The hub gains one entry in
 
 ### New Files
 
-Scuttle's own repository, generated from `TaioTech/app-template`. Its internal
+Scuttle's own repository, generated from `tycarolan/app-template`. Its internal
 layout is a matter for that repo's plan.
 
 | Path | Purpose |
 |------|---------|
-| `TaioTech/scuttle` (new repo) | The game, deployed to its own subdomain |
+| `tycarolan/scuttle` (new repo) | The game, deployed to its own subdomain |
 
 ### Modified Files
 
@@ -223,7 +223,7 @@ layout is a matter for that repo's plan.
 
 | # | Question | Context | Decision |
 |---|----------|---------|----------|
-| 1 | Is the app called Scuttle? | Working title. Alternatives raised: Sidestep, Low Tide, Undertow, Highwater. The slug is permanent once shipped and linked. | **Decided: Scuttle**, 2026-07-29. The repo is `TaioTech/scuttle` and it deploys to `scuttle.taiotech.com`. Settled before implementation precisely because the slug cannot move afterwards. |
+| 1 | Is the app called Scuttle? | Working title. Alternatives raised: Sidestep, Low Tide, Undertow, Highwater. The slug is permanent once shipped and linked. | **Decided: Scuttle**, 2026-07-29. The repo is `tycarolan/scuttle` and it deploys to `scuttle.taiotech.com`. Settled before implementation precisely because the slug cannot move afterwards. |
 | 2 | One run a day, or unlimited with a daily that counts? | One run makes a shared distance meaningful but is unforgiving for an arcade game, where failure is frequent and often instant. Chroma's puzzles fail gently; this does not. | **Decided: one run a day at ship, unlimited until then**, 2026-07-29. Scarcity is the shared premise and stays the target, but a prototype that can be played once a day cannot be tuned, and difficulty is still flat because the tide does not exist. The limit lands with the tide, not before. |
 | 3 | What is the win condition — is there one? | Reaching the sea could end the run as a win, or could loop into a harder beach for an endless distance score. | **Decided: the sea is a win**, 2026-07-29, after the movement prototype played well and its endlessness became the thing missing from it. The beach is a fixed length, the score is time, and shells are an optional second axis. Specified in [`finish-line.md`](finish-line.md). |
 | 4 | Does the player carry anything? | The hermit-crab framing — crossing to find a bigger shell — gives the run a reason and a possible carried-object mechanic. It may be flavour only. | Deferred. Flavour first; revisit only if the run needs another decision layer. |

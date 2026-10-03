@@ -69,7 +69,7 @@ hostname needs.
 
 ## Where it lives
 
-Source is [`TaioTech/scuttle`](https://github.com/TaioTech/scuttle); the
+Source is [`tycarolan/scuttle`](https://github.com/tycarolan/scuttle); the
 prototype deploys to [scuttle.taiotech.com](https://scuttle.taiotech.com). The
 [TaioTech hub](https://taiotech.com/scuttle) carries the project page that links
 here, and nothing else — this repository owns the code and the spec.
